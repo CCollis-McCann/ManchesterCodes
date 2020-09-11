@@ -1,0 +1,87 @@
+.nav {
+    background-image: url('https://media.wired.com/photos/5ee9a89f39276c28369687e1/master/pass/cloud-gaming-453089-edit.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+    height: 45vh;
+    transition: 1s;
+}
+
+.nav:hover {
+    height: 60vh;
+}
+
+form {
+    display: flex;
+    height: max-content;
+    margin-top: 20vh;
+    background-color: rgba(253, 0, 0, 0.418);
+    padding: 0vh 2vh;
+    border: white solid 1px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+form:hover {
+    transform: scale(1.1);
+}
+
+.search-button {
+    height: max-content;
+    border-radius: 4px;
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.63);
+    color: white; 
+}
+
+.logo {
+    height: max-content;
+    margin-left: -20vh;
+    border: solid 1px white;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.418);
+}
+
+.search-bar {
+    width: 20vh;
+    height: max-content;
+    align-self: center;
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+      flex-direction: column;
+      height: 50vh;
+      width: 100%;
+      align-items: start;
+    }
+
+    
+
+    .logo {
+        margin: 0vh;
+        align-self: center;
+    }
+
+    form {
+        flex-direction: column;
+        padding: 0vh;
+        padding-top: 5vh;
+        align-self: center;
+        background: none;
+        border: none;
+    }
+
+
+    
+    
+
+  }

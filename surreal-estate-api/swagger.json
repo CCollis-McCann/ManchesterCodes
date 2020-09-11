@@ -1,0 +1,337 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Surreal Estate API",
+    "description": "Endpoints for interfacing with the Surreal Estate backend",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "PropertyListings",
+      "description": "API endpoints for managing PropertyListings"
+    },
+    {
+      "name": "Favourites",
+      "description": "API endpoints for managing Favourites"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/PropertyListing": {
+      "post": {
+        "tags": [
+          "PropertyListings"
+        ],
+        "summary": "Create new property listing",
+        "parameters": [
+          {
+            "name": "propertyListing",
+            "in": "body",
+            "description": "Property listing that we want to create",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New property listing created",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "PropertyListings"
+        ],
+        "summary": "Get all property listings",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PropertyListings"
+            }
+          }
+        }
+      }
+    },
+    "/PropertyListing/count": {
+      "get": {
+        "tags": ["PropertyListings"],
+        "summary": "Get total number of PropertyListings.",
+        "responses": {
+          "200": {
+            "description": "Number of properties",
+            "schema": {
+              "$ref": "#/definitions/count"
+            }
+          }
+        }
+      }
+    },
+    "/PropertyListing/{propertyListingId}": {
+      "parameters": [
+        {
+          "name": "propertyListingId",
+          "in": "path",
+          "required": true,
+          "description": "ID of property listing that we want to retrieve",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "PropertyListings"
+        ],
+        "summary": "Get property listing with given propertyListingId",
+        "responses": {
+          "200": {
+            "description": "Property listing retrieved",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete property listing with given propertyListingId",
+        "tags": [
+          "PropertyListings"
+        ],
+        "responses": {
+          "200": {
+            "description": "Property listing deleted",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update property listing with given propertyListingId",
+        "tags": [
+          "PropertyListings"
+        ],
+        "parameters": [
+          {
+            "name": "propertyListing",
+            "in": "body",
+            "description": "Property listing object with updated values",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Property listing updated",
+            "schema": {
+              "$ref": "#/definitions/PropertyListing"
+            }
+          }
+        }
+      }
+    },
+    "/Favourite": {
+      "post": {
+        "tags": [
+          "Favourites"
+        ],
+        "summary": "Create new favourite",
+        "parameters": [
+          {
+            "name": "favourite",
+            "in": "body",
+            "description": "Favourite that we want to create",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "New favourite created",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Favourites"
+        ],
+        "summary": "Get all favourites",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Favourites"
+            }
+          }
+        }
+      }
+    },
+    "/Favourites/{favouriteId}": {
+      "parameters": [
+        {
+          "name": "favouriteId",
+          "in": "path",
+          "required": true,
+          "description": "ID of faovurite that we want to retrieve",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "tags": [
+          "Favourites"
+        ],
+        "summary": "Get favourite with given favouriteId",
+        "responses": {
+          "200": {
+            "description": "Favourite retrieved",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete favourite with given favouriteId",
+        "tags": [
+          "Favourites"
+        ],
+        "responses": {
+          "200": {
+            "description": "Favourite deleted",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update favourite with given favouriteId",
+        "tags": [
+          "Favourites"
+        ],
+        "parameters": [
+          {
+            "name": "favourite",
+            "in": "body",
+            "description": "Favourite object with updated values",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Favourite updated",
+            "schema": {
+              "$ref": "#/definitions/Favourite"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "count": {
+      "properties": {
+        "count": {
+          "type": "number"
+        }
+      }
+    },
+    "PropertyListing": {
+      "required": [
+        "_id",
+        "title",
+        "type",
+        "bedrooms",
+        "bathrooms",
+        "price",
+        "city",
+        "email"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "bedrooms": {
+          "type": "number"
+        },
+        "bathrooms": {
+          "type": "number"
+        },
+        "price": {
+          "type": "number"
+        },
+        "city": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      }
+    },
+    "PropertyListings": {
+      "type": "array",
+      "$ref": "#/definitions/PropertyListing"
+    },
+    "Favourite": {
+      "required": [
+        "_id",
+        "propertyListing",
+        "fbUserId"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "uniqueItems": true
+        },
+        "propertyListing": {
+          "type": "string",
+          "description": "Property ID"
+        },
+        "fbUserId": {
+          "type": "string"
+        }
+      }
+    },
+    "Favourites": {
+      "type": "array",
+      "$ref": "#/definitions/Favourite"
+    }
+  }
+}

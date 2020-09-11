@@ -1,0 +1,5 @@
+- Name: Jatinder Singh
+- Likes: Netflix, Sleeping(harldy get any), Going on long drives
+- Dislikes: Not many
+- Favourite Quote: When the Going Gets Tough, Tough get Going
+- GitHub Profile URL: https://github.com/jsingh318

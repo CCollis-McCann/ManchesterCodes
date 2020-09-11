@@ -1,0 +1,26 @@
+.Navbar {
+  background: white;
+  border-bottom: 2px solid #808080;
+}
+
+.Navbar__logo {
+  max-width: 200px;
+}
+
+.Navbar__links {
+  margin: 0;
+  padding: 20px;
+  float: right;
+}
+
+.Navbar__links-item {
+  margin: 0;
+  padding: 25px;
+  display: inline-block;
+}
+
+.Navbar__facebook {
+  margin: 0;
+  padding: 20px;
+  float: right;
+}

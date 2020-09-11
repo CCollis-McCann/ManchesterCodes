@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App__logo {
+  margin: auto;
+  height: 250px;
+  width: 500px;
+}

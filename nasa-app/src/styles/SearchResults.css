@@ -1,0 +1,13 @@
+.SeachResults {
+  display: flex;
+}
+
+.SearchResults__error {
+  text-align: center;
+}
+
+.SearchResults__image {
+  height: 300px;
+  width: 400px;
+  padding: 5px;
+}

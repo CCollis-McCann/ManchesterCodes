@@ -1,0 +1,21 @@
+.Search__form {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.Search__input {
+  width: 80%;
+  height: 50px;
+  border-radius: 11px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.Search__button {
+  width: 30%;
+  height: 50px;
+  border-radius: 11px;
+  font-size: 20px;
+  padding: 0 10px;
+}

@@ -1,0 +1,4 @@
+- Name: Tom
+- Likes: JavaScript, Burgers, Watching Sport
+- Dislikes: Mondays, Rain, Cold!
+- Favourite Quote: 'Success is a lousy teacher. It seduces smart people into thinking they can't lose'

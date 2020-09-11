@@ -1,0 +1,23 @@
+{
+  "name": "cruise-ships",
+  "version": "1.0.0",
+  "description": "Cruise ships project for MCR Codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCollis-McCann/cruise-ships.git"
+  },
+  "author": "Craig Collis-McCann craig@cmccanngbr.co.uk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CCollis-McCann/cruise-ships/issues"
+  },
+  "homepage": "https://github.com/CCollis-McCann/cruise-ships#readme",
+  "devDependencies": {
+    "jest": "^25.2.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "virtual-pet",
+  "version": "1.0.0",
+  "description": "A JavaScript ball of fluff for the MCR Codes course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CCollis-McCann"
+  },
+  "author": "Craig Collis-McCann craig@cmccanngbr.co.uk",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}

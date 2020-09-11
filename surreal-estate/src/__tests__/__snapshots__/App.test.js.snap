@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="Navbar"
+    >
+      <img
+        alt="Surreal Estate logo"
+        class="Navbar__logo"
+        src="logo.png"
+      />
+      <ul
+        class="Navbar__links"
+      >
+        <li
+          class="Navbar__links-item"
+        >
+          <a
+            href="/"
+          >
+            View Properties
+          </a>
+        </li>
+        <li
+          class="Navbar__links-item"
+        >
+          <a
+            href="/addproperty"
+          >
+            Add Properties
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="Properties"
+    >
+      Properties Page
+    </div>
+  </div>
+</DocumentFragment>
+`;

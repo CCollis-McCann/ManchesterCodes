@@ -1,0 +1,20 @@
+.Alert {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.Alert:empty {
+  display: none;
+}
+
+.Alert__success {
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  color: green;
+}
+
+.Alert__error {
+  border: 1px solid lightpink;
+  background-color: lightpink;
+  color: red;
+}
